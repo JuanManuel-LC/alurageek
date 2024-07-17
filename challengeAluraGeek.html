@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__box">
+            <div class="imagen__corazones__titulo">
+                <img src="img/image 1.png" alt="corazones">
+            </div>
+            <div class="texto__titulo">
+                <h1 class="titulo__header">AluraGeek</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__box">
+
+        <!--* Lista de Productos -->
+        <div class="mis__productos__box">
+            <h1 class="titulo__mis__productos">
+                MIS PRODUCTOS
+            </h1>
+            
+            <div class="productos__item__box">
+                <div class="texto__no-productos">
+                    <p>No se han agragado productos</p>
+                </div>
+                <ul class="lista__productos" data-productos>
+                    <!-- ?  card -->
+                    <!-- <li class="card producto__item">
+                        <img class="img__producto" src="img/Skill.jpg" alt="img_producto">
+                        <p class="texto nombre__producto">Nombre producto</p>
+                        <div class="texto precio__boton-eliminar">
+                            <p class="precio">$ 6.00</p>
+                            <img src="img/icon _trash 2_.png" alt="eliminar" class="boton___eliminar">
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="agregar__producto__box">
+            <h2 class="titulo__mis__productos">
+                AGREGAR PRODUCTOS
+            </h2>
+
+            <!-- * inputs ingresar producto -->
+            <div class="agregar__producto__formulario">
+                <form class="inputs__box">
+                    <input class="inputs" type="text" placeholder="nombre..." data-nombre required>
+                    <input class="inputs" type="text" placeholder="precio..." data-precio required>
+                    <input class="inputs" type="text" placeholder="imagen..." data-imagen required>
+                    <div class="botones">
+                        <input class="btn__enviar" type="submit" value="Enviar" data-enviar>
+                        <input class="btn__limpiar" type="button" value="Limpiar" data-limpiar>
+                    </div>
+                </>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__box">
+            <div class="footer__logo">
+                <div class="imagen__corazones__titulo">
+                    <img src="img/image 1.png" alt="corazones">
+                </div>
+                <div class="texto__titulo">
+                    <h1 class="titulo__footer">AluraGeek</h1>
+                </div>
+            </div>
+            <p class="nombre">DESARROLLADO POR JUAN MANUEL LC</p>
+            <p class="nombre">ALURA LATAM 2024</p>
+        </div>
+    </footer>
+
+    <script src="js/conectarAPI.js" type="module"></script>
+</body>
+</html>

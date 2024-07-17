@@ -1,0 +1,16 @@
+{
+  "Productos": [
+    {
+      "id": "1",
+      "nombre": "Casco",
+      "precio": "2.00",
+      "imagen": "img/Skill.jpg"
+    },
+    {
+      "id": "d207",
+      "nombre": "sdfsfgsd",
+      "precio": "47545",
+      "imagen": "yuigi"
+    }
+  ]
+}

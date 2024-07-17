@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 3px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #5300C8;
+}
+
+.header__box, .footer__logo{
+    background-color: #5300C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__header, .titulo__footer {
+    color: azure;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* main */
+
+.main__box {
+    display: flex;
+    margin: 10vh 5vh;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Lista de productos */
+.mis__productos__box {
+    height: 50vh;
+    width: 850px;
+    text-align: center;
+}
+
+.productos__item__box {
+    margin-top: 20px;
+    height: 50vh;
+    overflow-y: auto;
+    border-radius: 50px 0px 0px 50px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.3);
+}
+
+.productos__item__box::-webkit-scrollbar{
+    background-color: white;
+    width: 10px;
+}
+
+.productos__item__box::-webkit-scrollbar-thumb{
+    background-color: #5300C8;
+}
+
+.lista__productos{
+    /* padding: 30px 3px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.texto__no-productos {
+    margin: 2rem;
+    font-weight: 400;
+    color: rgba(176, 176, 176, 0.42);
+}
+
+.titulo__mis__productos {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+}
+
+.card {
+    margin: 24px 20px;
+    padding: 25px;
+    background-color: #ffffff08;
+    border-radius: 50px 5px;
+}
+
+.card .img__producto {
+    border-radius: 50px 5px;
+    width: 185px;
+}
+
+.texto {
+    padding: 8px 0;
+}
+
+.precio__boton-eliminar {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton__eliminar{
+    width: 20px;
+}
+
+
+/* Agregar producto */
+.agregar__producto__box {
+    width: 400px;
+}
+
+.agregar__producto__formulario {
+    /* background-color: aquamarine; */
+    margin: 40px 0;
+}
+
+.inputs__box {
+    padding: 20px;
+}
+
+.inputs{
+    width: 50vh;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 3px solid #5300C8;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones input {
+    width: 20vh;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.btn__enviar {
+    background-color: #5300C8;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.btn__limpiar {
+    background-color: white;
+    color: #5300C8;
+    font-weight: bolder;
+    border: 3px solid #5300C8;
+}
+
+
+/* Footer */
+
+.footer__box {
+    background-color: #5300C8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer__box p {
+    color: white;
+    font-size: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.footer__box p:last-child {
+    padding-top: 15px;
+    color: #8d3dfdfe;
+}
+
+
+
+/* Responsiva */
+
+@media (max-width: 768px){
+    .main__box {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 10px;
+        margin: none;
+    }
+    
+    /* Mis productos */
+    .productos__item__box {
+        margin-top: 20px;
+        height: 41vh;
+        overflow-y: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .mis__productos__box {
+        /* height: 50vh; */
+        width: auto;
+        text-align: center;
+    }
+
+    .lista__productos{
+        padding: 10px 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    
+    .titulo__mis__productos {
+        font-family: "Press Start 2P", system-ui;
+        font-size: 20px;
+    }
+    
+    .card {
+        margin: 0px;
+        padding: 15px 20px 2px;
+        background-color: #fbfac200;
+        border-radius: 50px 5px;
+    }
+    
+    .card .img__producto {
+        border-radius: 50px 5px;
+        width: 20vh;
+    }
+
+    /* Formulario */
+    .agregar__producto__box {
+        width: auto;
+    }
+
+    .agregar__producto__formulario {
+        margin: 20px 0 70px;
+    }
+
+    .inputs__box {
+        padding: 5px;
+    }
+
+    .inputs {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+}
